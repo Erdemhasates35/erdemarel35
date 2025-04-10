@@ -1,0 +1,15 @@
+name: Git Garbage Collection Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gc:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run Git Garbage Collection
+      run: git gc --auto --prune=now
