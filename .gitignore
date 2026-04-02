@@ -1,0 +1,26 @@
+.env
+*.pyc
+__pycache__/
+node_modules/
+.DS_Store
+*.log
+*.lock
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+# Secrets
+secret.json
+# Credentials
+*.pem
+*.key
+# IDE files
+.vscode/
+.idea/
+# Other common ignores
+*.tgz
+*~
+# macOS
+*.DS_Store
+# Windows
+Thumbs.db
